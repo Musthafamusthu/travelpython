@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Register</title>
+
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'style1.css'%}">
+</head>
+<!--<body>-->
+<!--<h2 class="ok">Registration</h2>-->
+<!--<form action="register" method="post" >-->
+<!--    {% csrf_token %}-->
+
+<!--    <input type="text" name="username" placeholder="UserName"><br>-->
+<!--    <input type="text" name="first_name" placeholder="Enter your first name"><br>-->
+<!--    <input type="text" name="last_name" placeholder="Enter your last name"><br>-->
+<!--    <input type="email" name="email" placeholder="Enter your email"><br>-->
+<!--    <input type="password" name="password" placeholder="Enter your password"><br>-->
+<!--    <input type="password" name="password1" placeholder="Confirm your password"><br>-->
+<!--    <input type="submit" class="ok">-->
+<!--</form>-->
+<!--{% for msg in messages %}-->
+<!--{{msg}}-->
+<!--{% endfor %}-->
+<body class="body">
+
+<div class="register">
+
+<h3 class="ok">Registration</h3>
+<form action="login" method="post">
+    {% csrf_token %}
+    <p>User Name</p>
+     <input type="text" name="username" placeholder="UserName">
+    <p>First_Name</p>
+    <input type="text" name="first_name" placeholder="Enter your first name">
+    <p>Last_Name</p>
+    <input type="text" name="last_name" placeholder="Enter your last name">
+    <p>Email</p>
+    <input type="email" name="email" placeholder="Enter your email">
+    <p>Password</p>
+    <input type="password" name="password" placeholder="Enter your password">
+    <p>Confirm_Password</p>
+    <input type="password" name="password1" placeholder="Confirm your password">
+    <button type="submit">Register</button>
+</form>
+</div>
+</body>
+</html>
